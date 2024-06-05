@@ -1,0 +1,19 @@
+.titulos{
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+.alimentos_{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.alimentos-item{
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
