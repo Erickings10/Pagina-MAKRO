@@ -1,0 +1,19 @@
+.header{
+    background-color: #00529b;
+}
+.header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5rem;
+}
+.logo-img{
+    width: 10rem;
+
+}
