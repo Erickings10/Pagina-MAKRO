@@ -12,6 +12,7 @@
     align-items: center;
     color: white;
     gap: 5rem;
+    text-decoration: none;
 }
 .logo-img{
     width: 10rem;
