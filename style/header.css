@@ -12,6 +12,9 @@
     align-items: center;
     color: white;
     gap: 5rem;
+}
+.Enlace{
+    color: white;
     text-decoration: none;
 }
 .logo-img{
