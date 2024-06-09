@@ -1,4 +1,6 @@
 body{
+    font-family: "Montserrat",sans-serif;
+    background-color: rgb(34, 34, 34);
     margin: 0;
 }
 .Encabezado{
@@ -14,26 +16,48 @@ body{
 }
 h1{
     text-align: center;
-    font-family: Montserrat;
-    color: rgb(82, 82, 82);
+    letter-spacing: 1px;
+    color: rgb(220, 220, 220);
 }
 .Sesion{
-    color: rgb(82, 82, 82);
     text-align: center;
     width: 350px;
-    height: 350px;
-    background: linear-gradient(rgb(95, 95, 255),rgb(50, 197, 255));
+    height: 400px;
+    background-color: rgb(29,129,206);
     margin: auto;
-    border: 4px solid black;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 black;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 8px black;
 }
-h3{
-    text-align: left;
-    font-size: 17px;
-    margin-top: 60px;
-    margin-bottom: 0;
-    margin-left: 85px;
+.User{
+    margin: 0;
+}
+.login{
+    width: 5rem;
+    margin: auto;
+}
+label{
+    font-size: 15px;
+    color: rgb(220, 220, 220);
+}
+.textbox{
+    font-size: 15px;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border: 0;
+    border-left: 4px solid rgb(82,82,82);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255,70%);
+}
+.Boton{
+    font-size: 15px;
+    color: rgb(220, 220, 220);
+    padding: 8px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(0, 82, 155);
+    box-shadow: 0 0 8px 0 black;
 }
 .Button{
     display: flex;
@@ -41,23 +65,8 @@ h3{
     align-items: center;
     flex-direction: column;
 }
-.textbox{
-    background: rgb(211, 211, 255);
-    color: rgb(82, 82, 82);
-    padding: 8px;
-    border: 0;
-    border-left: 2px solid black;
-    border-radius: 5px;
-}
-.Boton{
-    padding: 10px;
-    margin-top: 40px;
-    border-radius: 10px;
-    background: rgb(187, 187, 255);
-    box-shadow: 0 0 10px 0 black;
-}
 .Registro{
+    color: rgb(220, 220, 220);
     text-align: center;
-    font-size: 16px;
-    color: rgb(82, 82, 82);
 }
+

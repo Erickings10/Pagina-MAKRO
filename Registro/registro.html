@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makro | Registrate</title>
     <link rel="stylesheet" href="regisdiseño.css">
     <link rel="icon" href="../img/LOGOS/mini-logo-makro.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,13 +18,46 @@
         </nav>
     </header>
     <h1>Registrate con Nosotros</h1>
-    <div>
-        <form class="Register-1">
+    <div class="Register-1">
+        <form>
             <h3>Crear Cuenta</h3>
-            <h3>DNI</h3>
             <div class="Button">
-                <input type="text" placeholder="Ingrese su DNI" required>
-                <input type="submit" value="Registrar">
+                <label class="Label-1">Tipo de Documento</label>
+                <select>
+                    <option value="DNI">DNI</option>
+                    <option value="RUC">RUC</option>
+                </select>
+                <label class="Label-1">Documento</label>
+                <input class="textbox" type="text" placeholder="Ingrese su DNI" required>
+                <input class="boton" type="submit" value="Siguiente">
+            </div>
+        </form>
+    </div>
+    <div class="Register-2">
+        <form>
+            <h3>Crear Cuenta</h3>
+            <div class="Button">
+                <label class="Label-2">Nombre</label>
+                <input class="textbox-2" type="text" placeholder="Ingrese su nombre" required>
+                <label class="Label-2">Apellidos</label>
+                <input class="textbox-2" type="text" placeholder="Ingrese sus apellidos" required>
+                <label class="Label-2">Fecha de Nacimiento</label>
+                <input class="Fecha" type="date" required>
+                <label class="Label-2">Celular</label>
+                <input class="textbox-2" type="text" placeholder="Ingrese su número" minlength="9" maxlength="9">
+                <input class="boton-2" type="submit" value="Siguiente">
+            </div>
+        </form>
+    </div>
+    <div class="Register-1">
+        <form>
+            <h3>Crear Cuenta</h3>
+            <div class="Button">
+                <label class="Label-1">Email</label>
+                <input class="textbox" type="email" placeholder="ejemplo@gmail.com" required>
+                <label class="Label-1">Contraseña</label>
+                <input class="textbox" type="password" placeholder="Ingrese una contraseña" required>
+                <input class="boton" type="submit" value="Registrar">
             </div>
         </form>
     </div>
