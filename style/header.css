@@ -7,7 +7,7 @@
     align-items: center;
 }
 .header-nav-item{
-    padding-right: 25rem;
+    padding-right: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,10 @@
     gap: 5rem;
 }
 .Enlace{
+    color: white;
+    text-decoration: none;
+}
+.Registro{
     color: white;
     text-decoration: none;
 }
