@@ -1,4 +1,5 @@
 .titulos{
+    margin-top: 5rem ;
     display: flex;
     justify-content: center;
     gap: 20rem;
