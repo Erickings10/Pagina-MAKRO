@@ -45,6 +45,8 @@ h1{
 h3{
     color: rgb(220, 220, 220);
     font-size: 22px;
+    padding-top: 1rem;
+    
 }
 /*CENTRAR ELEMENTOS EN COLUMNA*/
 .Button{
@@ -147,4 +149,8 @@ select{
     margin: 20px;
     box-shadow: 0 0 15px 8px black;
     display: inline-block;
+}
+.imagen-tendedero{
+    margin-left: 5rem ;
+    width: 20rem;
 }
