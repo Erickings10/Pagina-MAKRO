@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makro | Registro de Productos</title>
+    <link rel="icon" href="../img/LOGOS/mini-logo-makro.png" type="image/png">
+    <link rel="stylesheet" href="register-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="Encabezado">
+            <a href="../index.html"><img class="Logo" src="../img/LOGOS/logo-makro-4096.png" title="Ir al Inicio"></a>
+        </nav>
+    </header>
+    <div class="contenedorProductos">
+        <h1>Registro de Producto</h1>
+        <p>Complete la información del producto a continuación:</p>
+        <form>
+            <div class="form-columnas">
+                <div class="columna izquierda-column">
+                    <div class="form-group">
+                        <label for="codigo">Código:</label>
+                        <input type="text" id="codigo" name="codigo" placeholder="1009TR" required>
+                        <button type="button" id="buscar">Buscar</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre del Producto:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Aceite" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción del Producto:</label>
+                        <textarea id="descripcion" name="descripcion" placeholder="Agrega información adicional del producto: (Und. x 20 L)" required></textarea>
+                    </div>
+                </div>
+                <div class="columna derecha-column">
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad Disponible:</label>
+                        <input type="number" id="cantidad" name="cantidad" placeholder="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de Caducidad:</label>
+                        <input type="date" id="fecha" name="fecha" value="2024-05-27" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoría del Producto:</label>
+                        <select id="categoria" name="categoria" >
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ubicacion">Ubicación de producto en tienda:</label>
+                        <select id="ubicacion" name="ubicacion" >
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button type="submit">Guardar</button>
+                <button type="button">Actualizar</button>
+                <button type="button">Cancelar</button>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
