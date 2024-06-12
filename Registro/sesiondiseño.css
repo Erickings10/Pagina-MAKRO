@@ -1,7 +1,16 @@
 body{
     font-family: "Montserrat",sans-serif;
-    background-color: rgb(34, 34, 34);
     margin: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+body.tema-claro {
+    background-color: #f1faee;
+    color: rgb(82,82,82);
+}
+
+body.tema-oscuro {
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
 }
 .Encabezado{
     width: 100%;
@@ -17,7 +26,7 @@ body{
 h1{
     text-align: center;
     letter-spacing: 1px;
-    color: rgb(220, 220, 220);
+    /*color: rgb(220, 220, 220);*/
 }
 .Sesion{
     text-align: center;
@@ -75,7 +84,7 @@ label{
 }
 
 .Registro{
-    color: rgb(220, 220, 220);
+    /*color: rgb(220, 220, 220);*/
     text-align: center;
 }
 .enlace{
@@ -85,4 +94,24 @@ label{
     transition: 0.3s all;
     color: aqua;
 }
-
+.contenedor{
+    text-align: right;
+    margin: 20px;
+}
+.BotonCambio{
+    font-size: 15px;
+    color: rgb(82,82,82);
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0 0 8px 0px black;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.BotonCambio:hover{
+    color: rgb(220, 220, 220);
+    background-color: rgb(82,82,82);
+    font-size: 18px;
+    box-shadow: 0px 0px 20px #000; 
+}
