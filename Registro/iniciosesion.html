@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makro | Iniciar Sesion</title>
-    <link rel="icon" href="../img/LOGOS/mini-logo-makro.png" type="image/png">
-    <link rel="stylesheet" href="sesiondiseño.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
+    <link rel="icon" href="../img/LOGOS/mini-logo-makro.png" type="image/png" />
+    <link rel="stylesheet" href="sesiondiseño.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="Encabezado">
-            <a href="../index.html"><img class="Logo" src="../img/LOGOS/logo-makro-4096.png" title="Ir al Inicio"></a>
-        </nav>
+      <nav class="Encabezado">
+        <a href="../index.html"
+          ><img
+            class="Logo"
+            src="../img/LOGOS/logo-makro-4096.png"
+            title="Ir al Inicio"
+        /></a>
+      </nav>
     </header>
-    <h1>Le damos la bienvenida a Makro</h1>
-    <div>
-        <form class="Sesion">
-            <div class="User">
-                <img class="login" src="../img/Login/user-interface.png">
-            </div>
-            <div class="Button">
-                <label>Correo Electronico</label>
-                <input class="textbox" type="email" placeholder="Ingrese su email" name="email" required>
-                <label>Contraseña</label>
-                <input class="textbox" type="password" placeholder="Ingrese su contraseña" name="contraseña" minlength="8" required>
-                <input class="Boton" type="submit" value="Ingresar">
-            </div>
+    <h1>LE DAMOS LA BIENVENIDA A MAKRO</h1>
+    <div class="Container">
+      <div class="Sesion">
+        <h2>Iniciar Sesion</h2>
+        <form>
+          <div class="Box-usuario">
+            <input type="email" name="correo" required />
+            <label>Correo Electronico</label>
+          </div>
+          <div class="Box-usuario">
+            <input type="password" name="contraseña" required />
+            <label>Contraseña</label>
+          </div>
+          <div class="Button">
+            <input class="Boton" type="submit" value="Ingresar" />
+          </div>
         </form>
-    </div>
-    <div class="Registro">
+      </div>
+      <div class="Registro">
         <h4>¿Aún no te registras?</h4>
-        <h4><a class="enlace" href="registro.html">Registrate Aquí</a></h4>
+        <button class="link-registro">
+          <span><a class="enlace" href="registro.html">Registrate Aquí</a></span>
+          <svg width="15px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="contenedor">
-        <button class="BotonCambio" id="CambioTema">Cambiar Tema</button>
+    <div class="Contenedor">
+      <button class="BotonCambio" id="CambioTema">Cambiar Tema</button>
     </div>
     <script src="sesion.js"></script>
-</body>
+  </body>
 </html>
