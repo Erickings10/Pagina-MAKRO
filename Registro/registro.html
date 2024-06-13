@@ -17,49 +17,53 @@
             <a href="../index.html"><img class="Logo" src="../img/LOGOS/logo-makro-4096.png" title="Ir al Inicio"></a>
         </nav>
     </header>
-    <h1>Registrate con Nosotros</h1>
-    <div class="register-form-container">
-        <form class="Register-1">
-            <h3>Crear Cuenta</h3>
-            <div class="Button">
-                <label class="Label-1">Tipo de Documento</label>
-                <select>
-                    <option value="DNI">DNI</option>
-                    <option value="RUC">RUC</option>
-                </select>
-                <label class="Label-1">Documento</label>
-                <input class="textbox" type="text" placeholder="Ingrese su DNI" required>
-                <input class="boton" type="submit" value="Siguiente">
+    <h1>REGISTRATE CON NOSOTROS</h1>
+    <div class="Container">
+        <div class="Registro">
+          <h2>Registro</h2>
+          <form>
+            <div class="Box-Register">
+              <input type="text" name="DNI" required>
+              <label>DNI</label>
             </div>
-        </form>
-        <form class="Register-2">
-            <h3>Crear Cuenta</h3>
-            <div class="Button">
-                <label class="Label-2">Nombre</label>
-                <input class="textbox-2" type="text" placeholder="Ingrese su nombre" required>
-                <label class="Label-2">Apellidos</label>
-                <input class="textbox-2" type="text" placeholder="Ingrese sus apellidos" required>
-                <label class="Label-2">Fecha de Nacimiento</label>
-                <input class="Fecha" type="date" required>
-                <label class="Label-2">Celular</label>
-                <input class="textbox-2" type="text" placeholder="Ingrese su número" minlength="9" maxlength="9">
-                <input class="boton" type="submit" value="Siguiente">
+            <div class="Box-Register">
+              <input type="text" name="nombre" required>
+              <label>Nombres</label>
             </div>
-        </form>
-        <form class="Register-3">
-            <h3>Crear Cuenta</h3>
-            <div class="Button">
-                <label class="Label-1">Email</label>
-                <input class="textbox" type="email" placeholder="ejemplo@gmail.com" required>
-                <label class="Label-1">Contraseña</label>
-                <input class="textbox" type="password" placeholder="Ingrese una contraseña" required>
-                <input class="boton" type="submit" value="Registrar">
+            <div class="Box-Register">
+              <input type="text" name="apellido" required>
+              <label>Apellidos</label>
             </div>
-        </form>
-        <img class="imagen-tendedero" src="../img/Register/tendero.png" alt="tendero">
-    </div>
-    <div class="Volver">
-        <a class="iniciosesion" href="iniciosesion.html">Volver al Inicio de Sesion</a>
-    </div>
+            <div class="Box-Register">
+              <input type="date" name="nacimiento" required>
+              <label for="Fecha de Nacimiento"></label>
+            </div>
+            <div class="Box-Register">
+              <input type="text" name="celular" minlength="9" maxlength="9" required>
+              <label>Celular</label>
+            </div>
+            <div class="Box-Register">
+              <input type="email" name="correo" required>
+              <label>Correo Electronico</label>
+            </div>
+            <div class="Box-Register">
+              <input type="password" name="contraseña" minlength="8" required>
+              <label>Contraseña</label>
+            </div>
+            <div class="Button">
+              <input class="Boton" type="submit" value="Registrarse" />
+            </div>
+          </form>
+        </div>
+        <div class="InicioSesion">
+          <button class="link-iniciosesion">
+            <span><a class="enlace" href="iniciosesion.html">Volver al Inicio de Sesion</a></span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
 </body>
 </html>

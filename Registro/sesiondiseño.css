@@ -84,7 +84,7 @@ h1 {
 .Sesion .Box-usuario input:valid ~ label {
   top: -20px;
   left: 0;
-  color: black;
+  color: rgb(34, 34, 34);
   font-size: 12px;
 }
 /*CONTENEDOR BOTON "INGRESAR"*/

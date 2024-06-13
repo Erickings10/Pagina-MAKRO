@@ -1,168 +1,169 @@
 @import url(../style/reset.css);
-
-body{
-    font-family: "Montserrat",sans-serif;
-    background-color: rgb(34, 34, 34);
-    margin: 0;
+html {
+  height: 100%;
 }
-.Encabezado{
-    width: 100%;
-    height: 5rem;
-    background-color:rgb(0, 82, 155);
-    display: flex;
-    align-items: center;
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(34, 34, 34);
+  transition: background-color 0.5s, color 0.5s;
 }
-.Logo{
-    width: 10rem;
-    margin: 0;
+.Encabezado {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(0, 82, 155);
+  display: flex;
+  align-items: center;
 }
-h1{
-    text-align: center;
-    margin: 30px 30px;
-    color: rgb(220, 220, 220);
-    letter-spacing: 1px;
-    font-size: 2rem;
-    font-weight: 600;
+.Logo {
+  width: 10rem;
+  margin: 0;
 }
-/*FORMULARIOS*/
-.register-form-container{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    
+h1 {
+  text-align: center;
+  margin: 30px 30px;
+  color: rgb(220, 220, 220);
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 600;
 }
-.Register-1{
-    text-align: center;
-    width: 350px;
-    height: 400px;
-    background-color: rgb(29,129,206);
-    border-radius: 5px;
-    margin: 20px;
-    box-shadow: 0 0 15px 8px black;
-    display: inline-block;
+/*CAJA DEL FORMULARIO*/
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
 }
-/*TITULO DE LOS FORMULARIOS*/
-h3{
-    color: rgb(220, 220, 220);
-    font-size: 22px;
-    padding-top: 1rem;
-    
+.Registro {
+  width: 400px;
+  padding: 40px;
+  background: rgb(29, 129, 206);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-/*CENTRAR ELEMENTOS EN COLUMNA*/
-.Button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/*TITULO DEL FORMULARIO*/
+.Registro h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgb(220, 220, 220);
+  text-align: center;
 }
-/*ETIQUETAS DE LOS INPUT*/
-.Label-1{
-    color: rgb(220, 220, 220);
-    margin-top: 40px;
+.Registro .Box-Register {
+  position: relative;
 }
-select{
-    padding: 6px;
-    padding-right: 40%;
-    border:0;
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255,70%);
+.Registro .Box-Register input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(220, 220, 220);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
 }
-
-/*INPUT*/
-.textbox{
-    font-size: 15px;
-    padding: 6px;
-    border: 0;
-    border-left: 3px solid rgb(82,82,82);
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255,70%);
+.Registro .Box-Register label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(220, 220, 220);
+  pointer-events: none;
+  transition: 0.5s;
 }
-/*BOTON*/
-.boton{
-    font-size: 15px;
-    color: rgb(225, 225, 225);
-    padding: 8px;
-    margin-top: 40px;
-    border: 0;
-    border-radius: 5px;
-    background-color: rgb(0, 82, 155);
-    box-shadow: 0 0 8px 0 black;
-    cursor: pointer;
-    transition: 0.3s all;
+.Registro .Box-Register input:focus ~ label,
+.Registro .Box-Register input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: rgb(34, 34, 34);
+  font-size: 12px;
 }
-.boton:hover{
-    color: white;
-    background-color: rgb(0, 82, 155); 
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 0px 0px 20px #000; 
+/*CAJA DEL BOTON "REGISTRARSE"*/
+.Boton {
+  font-size: 15px;
+  color: rgb(220, 220, 220);
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(0, 82, 155);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s all;
 }
-/*DISEÑO DEL SEGUNDO FORMULARIO*/
-.Register-2{
-    text-align: center;
-    width: 350px;
-    height: 400px;
-    background-color: rgb(29,129,206);
-    border-radius: 5px;
-    margin: 20px;
-    box-shadow: 0 0 15px 8px black;
-    display: inline-block;
+.Boton:hover {
+  background-color: rgb(0, 82, 155);
+  font-size: 18px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
-.Button-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.Label-2{
-    color: rgb(220, 220, 220);
-    margin-top: 10px;
+/*CAJA DEL ENLACE "INICIO SESION"*/
+.InicioSesion {
+  text-align: center;
 }
-.textbox-2{
-    font-size: 15px;
-    padding: 6px;
-    border: 0;
-    border-left: 3px solid rgb(82,82,82);
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255,70%);
-}
-.Fecha{
-    padding: 6px;
-    padding-left: 20%;
-    border: 0;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255,70%);
-    margin-top: 5px;
+.enlace {
+  color: rgb(0, 82, 155);
+  text-decoration: none;
 }
 
-/*DISEÑO DEL TERCER FORMULARIO*/
-.Register-3{
-    text-align: center;
-    width: 350px;
-    height: 400px;
-    background-color: rgb(29,129,206);
-    border-radius: 5px;
-    margin: 20px;
-    box-shadow: 0 0 15px 8px black;
-    display: inline-block;
+.link-iniciosesion {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-.imagen-tendedero{
-    margin-left: 5rem ;
-    width: 20rem;
-    display: inline-block;
+.link-iniciosesion:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
 }
-.Volver{
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
+.link-iniciosesion span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
 }
-.iniciosesion{
-    color: rgb(0, 82, 155);
+.link-iniciosesion svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
 }
-.Volver a:hover{
-    transition: 0.3s all;
-    color: aqua;
+.link-iniciosesion:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+.link-iniciosesion:hover svg {
+  transform: translateX(0);
+}
+.link-iniciosesion:active {
+  transform: scale(0.95);
 }
