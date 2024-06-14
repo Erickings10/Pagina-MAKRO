@@ -22,6 +22,7 @@
             class="Logo"
             src="../img/LOGOS/logo-makro-4096.png"
             title="Ir al Inicio"
+            aria-label="Haz click aquí para ir a la pagina principal"
         /></a>
       </nav>
     </header>
@@ -31,22 +32,22 @@
         <h2>Iniciar Sesion</h2>
         <form>
           <div class="Box-usuario">
-            <input type="email" name="correo" required />
+            <input type="email" name="correo" aria-label="Aquí debes ingresar tu correo electronico" required />
             <label>Correo Electronico</label>
           </div>
           <div class="Box-usuario">
-            <input type="password" name="contraseña" required />
+            <input type="password" name="contraseña" aria-label="Aquí debes ingresar tu contraseña" required />
             <label>Contraseña</label>
           </div>
           <div class="Button">
-            <input class="Boton" type="submit" value="Ingresar" />
+            <input class="Boton" type="submit" value="Ingresar" aria-label="Haz click aquí una vez hayas ingresado tus datos" />
           </div>
         </form>
       </div>
       <div class="Registro">
         <h4>¿Aún no te registras?</h4>
         <button class="link-registro">
-          <span><a class="enlace" href="registro.html">Registrate Aquí</a></span>
+          <span><a class="enlace" href="registro.html" aria-label="Haz click aquí para crearte una cuenta">Registrate Aquí</a></span>
           <svg width="15px" height="10px" viewBox="0 0 13 10">
             <path d="M1,5 L11,5"></path>
             <polyline points="8 1 12 5 8 9"></polyline>
