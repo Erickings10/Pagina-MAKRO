@@ -90,6 +90,11 @@ select {
 
 textarea {
     height: 60px;
+    resize: none;
+}
+
+select {
+    width: 100%; 
 }
 
 button {
