@@ -1,20 +1,72 @@
-.titulos{
-    margin-top: 5rem ;
-    display: flex;
-    justify-content: center;
-    gap: 20rem;
+.titulos {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
 }
-.alimentos_{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
 
+.Buscador {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.alimentos-item{
-    background-color: antiquewhite;
-    border-radius: 5px;
+.buscar {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+.buscar::placeholder {
+  color: #9e9ea7;
+}
+.buscar:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(0, 48, 73, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+}
+.icono {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+.alimentos_ {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+}
+.alimentos-item {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+}
+.alimentos-item img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.alimentos-item label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
 }
