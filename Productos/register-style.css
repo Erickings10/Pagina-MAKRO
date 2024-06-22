@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .Logo {
     width: 10rem;
     margin: 0;
@@ -21,8 +22,14 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 40px rgba(5, 0, 0, 0.7);
-    width: 800px;
+    max-width: 800px; 
     margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; 
+}
+
+.contenedorProductos:hover {
+    transform: scale(1.02); 
 }
 
 h1.titulo {
@@ -65,7 +72,7 @@ form {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 }
 
 .label {
@@ -96,7 +103,18 @@ select {
     font-size: 14px;
     box-shadow: 0 0 40px rgba(5, 0, 0, 0.514);
     background-color: rgba(255, 255, 255, 0.507); 
+    transition: transform 0.2s;
 }
+
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    transform: scale(1.05);
+}
+
 
 textarea {
     height: 60px;
@@ -116,6 +134,11 @@ button {
     border-radius: 21px;
     box-shadow: 0 0 8px 0 black;
     cursor: pointer; 
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 button[type="submit"] {
@@ -164,4 +187,43 @@ button#buscar {
     pointer-events: none;
     top: 50%;
     transform: translateY(-50%);
+}
+
+input.focused, textarea.focused, select.focused {
+    transform: scale(1.1);
+}
+
+
+
+/* ALERTAS */
+.alerta-oculta {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.alerta-activa {
+    display: block;
+    animation: alertaAparecer 0.5s forwards;
+}
+
+
+.alerta-oculta .mensaje {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.alerta-oculta i {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-top: 10px;
 }
