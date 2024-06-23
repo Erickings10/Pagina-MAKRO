@@ -1,13 +1,18 @@
-const lista=document.querySelector("[data-productos]")
+const lista=document.querySelector(".lista-item")
 
-function mostrarAB(){
+function mostrarAB(alimento){
+    
     const producto=document.createElement("li");
     producto.innerHTML=`
     <li>
-        <p> hola </p>    
+        <p> hola </p> 
     </li>
+           
     `
+    alimento.appendChild(producto);
+
     return producto
+    
 }
 
-lista.addEventListener("click",mostrarP())
+lista.addEventListener("click", () => mostrarAB(alimento));
