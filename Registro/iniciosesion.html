@@ -30,7 +30,7 @@
     <div class="Container">
       <div class="Sesion">
         <h2>Iniciar Sesion</h2>
-        <form>
+        <form id="Form">
           <div class="Box-usuario">
             <input type="email" name="correo" aria-label="Aquí debes ingresar tu correo electronico" required />
             <label>Correo Electronico</label>
@@ -40,7 +40,7 @@
             <label>Contraseña</label>
           </div>
           <div class="Button">
-            <input class="Boton" type="submit" value="Ingresar" aria-label="Haz click aquí una vez hayas ingresado tus datos" />
+            <input class="Boton" type="submit" id="btn_Ingresar" value="Ingresar" aria-label="Haz click aquí una vez hayas ingresado tus datos" />
           </div>
         </form>
       </div>
@@ -63,6 +63,12 @@
         <span class="slider"></span>
       </label>
     </div>
+    <div id="alerta" class="alerta-oculta">
+      <span class="mensaje">Inicio de Sesion Correctamente</span>
+      <br>
+      <i class="fas fa-check-circle"></i>
+    </div>
     <script src="sesion.js"></script>
+    <script src="inicio.js"></script>
   </body>
 </html>

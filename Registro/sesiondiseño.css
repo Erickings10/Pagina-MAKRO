@@ -106,8 +106,7 @@ h1 {
   transition: 0.3s all;
 }
 .Boton:hover {
-  background-color: rgb(0, 82, 155);
-  font-size: 18px;
+  background-color: rgb(0, 131, 246);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 .Button {
@@ -184,4 +183,46 @@ h4{
 .Contenedor-Tema {
   text-align: right;
   margin: 20px;
+}
+
+/*INICIO SESION*/
+
+.alerta-oculta {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.alerta-activa {
+  display: block;
+  animation: alertaAparecer 0.5s forwards;
+}
+
+.alerta-oculta .mensaje {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.alerta-oculta i {
+  font-size: 32px;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+@keyframes alertaAparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
