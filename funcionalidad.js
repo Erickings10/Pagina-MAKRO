@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
             { name: 'Bebida 8', image: 'img/alimentos/gaseosa.png' },
             { name: 'Bebida 9', image: 'img/alimentos/gaseosa.png' },
             { name: 'Bebida 10', image: 'img/alimentos/agua.png' },
-            { name: 'Bebida 11', image: 'img/alimentos/gatorade3.png' },
-            { name: 'Bebida 12', image: 'img/alimentos/cifrut.png' },
+            { name: 'Bebida 11', image: 'img/alimentos/cifrut.png' },
+            { name: 'Bebida 12', image: 'img/alimentos/gatorade3.png' },
         ],
         lacteos: [
             { name: 'Lacteo 1', image: 'img/alimentos/Gloria.png' },
