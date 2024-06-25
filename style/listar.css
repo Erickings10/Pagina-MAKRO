@@ -1,21 +1,31 @@
-.product-list {
+.product-list{
+    /* margin-top: 2rem; */
+    margin: 2rem 20rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center; /* Centra las imágenes en el contenedor */
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
 }
-
 .product-item {
-    width: calc(25% - 20px); /* Cada elemento tomará el 25% del ancho del contenedor menos el espacio del gap */
+    background-color: skyblue;
+    border-radius: 5px;
     text-align: center;
+    padding: 1rem;
 }
-
 .product-item img {
-    width: 50%;
+    max-width: 150px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
-
-.alimentos-item {
-    cursor: pointer;
+.product-item label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
 }

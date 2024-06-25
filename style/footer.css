@@ -1,11 +1,10 @@
 .footer {
-  position: absolute;
-  bottom: 0;
   padding-top: 10px;
   font-size: 14px;
   background-color: #00539b;
   color: #ddd;
   width: 100%;
+  margin-top: auto;
 }
 
 ul {
