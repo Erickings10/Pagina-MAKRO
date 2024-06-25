@@ -1,0 +1,21 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Centra las imágenes en el contenedor */
+}
+
+.product-item {
+    width: calc(25% - 20px); /* Cada elemento tomará el 25% del ancho del contenedor menos el espacio del gap */
+    text-align: center;
+}
+
+.product-item img {
+    width: 50%;
+    height: auto;
+}
+
+.alimentos-item {
+    cursor: pointer;
+}
